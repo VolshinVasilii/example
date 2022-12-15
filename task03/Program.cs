@@ -3,7 +3,9 @@
 // 3 -> Среда
 // 5 -> Пятница
 
-Console.WriteLine("Введите число");
+using System;
+
+System.Console.WriteLine("Введите число");
 string number = (Console.ReadLine());
 
 if (number == "1") Console.WriteLine("понедельник");
