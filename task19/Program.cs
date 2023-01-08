@@ -4,12 +4,17 @@
 // 12821 -> да
 // 23432 -> да
 
-Console.WriteLine("Введите пятизначное число ");
+Console.WriteLine("Введите число ");
 int number = Convert.ToInt32(Console.ReadLine());
-
-Console.Write($"Число {number} ");
-Console.WriteLine(Palindrome(number) ? "является палиндромом" : "не является палиндром");
-
+if (number < 100000 && number > 9999)
+{
+    Console.Write($"Число {number} ");
+    Console.WriteLine(Palindrome(number) ? "является палиндромом" : "не является палиндром");
+}
+else
+{
+    Console.WriteLine("Введено некорректное число");
+}
 
 bool Palindrome(int num)
 {
